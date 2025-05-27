@@ -32,12 +32,12 @@ const Category = () => {
         centeredSlides={true}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="mySwiper mb-24"
+        className="mySwiper mb-8"
       >
         {categories.map((category, index) => (
           <SwiperSlide key={index}>
             <img src={category.image} alt={category.name} />
-            <h3 className="text-center text-2xl font-bold uppercase text-slate-700">
+            <h3 className="text-center text-2xl max-[550px]:text-[10px] font-bold uppercase text-slate-700">
               {category.name}
             </h3>
           </SwiperSlide>

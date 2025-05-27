@@ -5,40 +5,28 @@ import svg4 from "../../../assets/svg-icon/truck.svg";
 import svg5 from "../../../assets/svg-icon/quality.svg";
 
 const MidSection = () => {
+  const items = [
+    { icon: svg1, text: "Professional Painter" },
+    { icon: svg4, text: "Fastest Delivery" },
+    { icon: svg3, text: "24/7 Live Support" },
+    { icon: svg2, text: "Secure Payment" },
+    { icon: svg5, text: "Top-Notch Quality" },
+  ];
+
   return (
-    <div
-      className="ups bg-white shadow-blue-200 rounded-4 flex flex-row justify-center 
-    mb-12 shadow-lg max-w-fit mx-auto p-4 rounded"
-    >
-      <div className="flex justify-content-start align-items-center mr-6 gap-2">
-        <img src={svg1} className="mx-auto h-8 w-8" alt="" />
-        <p className="text-rubik subtitle2 text-black-marie m-0 text-gray-600">
-          Professional Painter
-        </p>
-      </div>
-      <div className="flex justify-content-start align-items-center mr-6 gap-2">
-        <img src={svg4} className="mx-auto h-8 w-8" alt="" />
-        <p className="text-rubik subtitle2 text-black-marie m-0 ml-2 text-gray-600">
-          Fastest Delivery
-        </p>
-      </div>
-      <div className="flex justify-content-start align-items-center mr-6 gap-2">
-        <img src={svg3} className="mx-auto h-8 w-8" alt="" />
-        <p className="text-rubik subtitle2 text-black-marie m-0 text-gray-600">
-          24/7 Live Support
-        </p>
-      </div>
-      <div className="flex justify-content-start align-items-center mr-6 gap-2">
-        <img src={svg2} className="mx-auto h-8 w-8" alt="" />
-        <p className="text-rubik subtitle2 text-black-marie m-0 text-gray-600">
-          Secure Payment
-        </p>
-      </div>
-      <div className="flex justify-content-start gap-2">
-        <img src={svg5} className="mx-auto h-8 w-8" alt="" />
-        <p className="text-rubik subtitle2 text-black-marie m-0 text-gray-600">
-          Top-Notch Quality
-        </p>
+    <div className="bg-white shadow-lg rounded-lg max-[1300px]:mx-4 p-4 mb-12 max-w-7xl mx-auto">
+      <div className="grid min-[320px]:grid-cols-2 min-[500px]:grid-cols-3 lg:grid-cols-5 justify-center gap-6">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-center gap-2 w-full sm:w-auto sm:flex-1 justify-center"
+          >
+            <img src={item.icon} className="h-8 w-8 object-contain" alt="" />
+            <p className="text-gray-600 text-sm sm:text-base font-medium">
+              {item.text}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

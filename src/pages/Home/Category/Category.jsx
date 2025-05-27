@@ -37,7 +37,7 @@ const Category = () => {
         {categories.map((category, index) => (
           <SwiperSlide key={index}>
             <img src={category.image} alt={category.name} />
-            <h3 className="text-center text-2xl font-bold uppercase">
+            <h3 className="text-center text-2xl font-bold uppercase text-slate-700">
               {category.name}
             </h3>
           </SwiperSlide>

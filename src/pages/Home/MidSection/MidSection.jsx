@@ -7,7 +7,7 @@ import svg5 from "../../../assets/svg-icon/quality.svg";
 const MidSection = () => {
   return (
     <div
-      className="ups shadow-blue-200 rounded-4 flex flex-row justify-center 
+      className="ups bg-white shadow-blue-200 rounded-4 flex flex-row justify-center 
     mb-12 shadow-lg max-w-fit mx-auto p-4 rounded"
     >
       <div className="flex justify-content-start align-items-center mr-6 gap-2">

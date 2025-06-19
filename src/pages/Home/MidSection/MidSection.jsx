@@ -3,10 +3,12 @@ import svg2 from "../../../assets/svg-icon/secure.svg";
 import svg3 from "../../../assets/svg-icon/service.svg";
 import svg4 from "../../../assets/svg-icon/truck.svg";
 import svg5 from "../../../assets/svg-icon/quality.svg";
+import svg6 from "../../../assets/svg-icon/price.svg";
 
 const MidSection = () => {
   const items = [
     { icon: svg1, text: "Professional Painter" },
+    { icon: svg6, text: "Affordable Price" },
     { icon: svg4, text: "Fastest Delivery" },
     { icon: svg3, text: "24/7 Live Support" },
     { icon: svg2, text: "Secure Payment" },
@@ -15,7 +17,7 @@ const MidSection = () => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg max-[1300px]:mx-4 p-4 mb-12 max-w-7xl mx-auto">
-      <div className="grid min-[320px]:grid-cols-2 min-[500px]:grid-cols-3 lg:grid-cols-5 justify-center gap-6">
+      <div className="grid min-[320px]:grid-cols-2 min-[500px]:grid-cols-3 lg:grid-cols-6 justify-center gap-6">
         {items.map((item, index) => (
           <div
             key={index}

@@ -2,9 +2,9 @@ const Card = () => {
   return (
     <a
       href="#"
-      className="group relative block rounded-md rounded-tr-3xl overflow-hidden"
+      className="group relative block rounded-md rounded-tr-xl overflow-hidden"
     >
-      <span className="absolute z-5 -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase">
+      <span className="absolute z-5 -top-px -right-px rounded-tr-xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase">
         Save 10%
       </span>
 

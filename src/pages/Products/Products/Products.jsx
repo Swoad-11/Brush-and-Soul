@@ -1,14 +1,11 @@
 import React from "react";
 import Card from "../../../components/Card";
-import { Helmet } from "react-helmet-async";
 import Cover from "../../Shared/Cover/Cover";
 
 const Products = () => {
   return (
     <>
-      <Helmet>
-        <title>Brush & Soul | Products</title>
-      </Helmet>
+      <title>Brush & Soul | Products</title>
       <Cover />
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">

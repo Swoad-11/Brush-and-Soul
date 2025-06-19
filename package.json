@@ -19,7 +19,6 @@
     "daisyui": "^5.0.37",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-helmet-async": "^2.0.5",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.6.0",
     "swiper": "^11.2.8",
